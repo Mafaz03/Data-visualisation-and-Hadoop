@@ -1,0 +1,12 @@
+data = mtcars
+summary(data)
+
+hist(xlab = "MPG", data$mpg, col = "red")
+
+boxplot(main = "Box plot for gear and mpg", xlab = "gear", ylab = "mpg", data$gear,data$mpg)
+
+plot(main = "Box plot for gear and mpg", xlab = "gear", ylab = "mpg", data$gear, data$mpg, type='l')
+
+plot(main = "Box plot for horsepower and mpg", xlab = "hp", ylab = "mpg", data$hp, data$mpg)
+
+pie(main = "Pie for carb", data$carb)
