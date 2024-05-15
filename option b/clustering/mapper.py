@@ -3,7 +3,9 @@ import numpy as np
 
 centroids = [1,3,5]
 for line in sys.stdin:
-    point1, point2 = map(float, line.strip().split(','))
+    a = line.strip().split(',')[:2]
+    points = [float(b) for b in a]
+    point1, point2 = points
 
     min_dist = float('inf')
     min_centroid = None
