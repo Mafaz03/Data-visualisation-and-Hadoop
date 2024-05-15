@@ -7,4 +7,4 @@ for line in sys.stdin:
     cause = line[1]
     state = line[2]
     deaths = line[3]
-    print('%s\t%s\t%s' % (state, cause, deaths))    
+    print(f'{state}\t{cause}\t{deaths}')    
