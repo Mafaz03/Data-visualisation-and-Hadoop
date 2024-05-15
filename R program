@@ -10,3 +10,7 @@ plot(main = "Box plot for gear and mpg", xlab = "gear", ylab = "mpg", data$gear,
 plot(main = "Box plot for horsepower and mpg", xlab = "hp", ylab = "mpg", data$hp, data$mpg)
 
 pie(main = "Pie for carb", data$carb)
+
+barplot(main = "Bar plot for gear vs horsepower", xlab = "gear", ylab = "horsepower", data$gear, data$hp)
+
+heatmap(as.matrix(data), main = "Heatmap")
