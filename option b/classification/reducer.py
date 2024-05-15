@@ -11,5 +11,4 @@ for line in sys.stdin:
 
 df = pd.DataFrame(all)
 result = df.groupby(0).sum().reset_index()
-for _, row in result.iterrows():
-    print(row[0], ":" , row[1])
+print(result)
