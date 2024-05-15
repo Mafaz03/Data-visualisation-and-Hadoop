@@ -1,0 +1,9 @@
+2017,Unintentional,US,3243,43
+2017,Kideny failure,UAE,324,31
+2017,Torsion,India,34,46
+2017,Kideny failure,US,32344,1
+2017,Kideny failure,US,32344,1
+2017,Kideny failure,UAE,324,324
+2017,Torsion,US,43
+2017,Headace,UAE,43
+2017,Unintentional,India,32
