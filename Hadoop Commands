@@ -1,0 +1,21 @@
+bin/hdfs dfs -ls /
+
+bin/hdfs dfs mkdir geeks
+bin/hdfs dfs -ls /
+
+bin/hdfs dfs -touchz /geeks/myfile.txt
+bin/hdfs dfs -lsr /geeks
+
+bin/hdfs dfs -put ../Desktop/enterfilename.txt /geeks
+bin/hdfs dfs -lsr /geeks
+
+bin/hdfs dfs -cat /geeks/enterfilename.txt
+
+bin/hdfs dfs -moveFromLocal ../Desktop/enterfilename.txt /geeks
+bin/hdfs dfs -ls /geeks
+
+bin/hdfs dfs -mkdir geeks_copied
+bin/hdfs dfs -cp /geeks /geeks_copied
+bin/hdfs dfs -ls /geeks_copied
+
+bin/hdfs dfs -du /geeks
