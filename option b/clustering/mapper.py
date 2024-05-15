@@ -11,7 +11,7 @@ for line in sys.stdin:
     min_dist = float('inf')
     min_centroid = None
     for centroid in centroids:
-        dist = math.sqrt(((point1 - centroid ) + (point2 - centroid))**2)
+        dist = math.sqrt(((point1 - centroid)**2 + (point2 - centroid)**2))
         if dist < min_dist:
             min_dist = dist
             min_centroid = centroid
