@@ -1,0 +1,45 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df = sns.load_dataset('iris')
+
+plt.scatter(df.sepal_length, df.sepal_width)
+plt.xlabel("Sepal Length")
+plt.xlabel("Sepal Width")
+plt.title("Sepal Length vs Sepal Width")
+plt.show()
+
+plt.hist(df['petal_length'], bins=30, edgecolor='black')
+plt.title('Distribution of Petal Length')
+plt.xlabel('Petal Length')
+plt.ylabel('Frequency')
+plt.show()
+
+species_counts = df['species'].value_counts()
+plt.bar(species_counts.index, species_counts.values)
+plt.title('Count of Species')
+plt.xlabel('Species')
+plt.ylabel('Count')
+plt.show()
+
+plt.plot(df.petal_width, df.sepal_width)
+plt.xlabel("Petal Length")
+plt.xlabel("Sepal Width")
+plt.title("Sepal Length vs Sepal Width")
+plt.show()
+
+plt.plot(df.petal_width, df.sepal_width)
+plt.xlabel("Petal Length")
+plt.xlabel("Sepal Width")
+plt.title("Sepal Length vs Sepal Width")
+plt.show()
+
+species_counts = df['species'].value_counts()
+plt.pie(species_counts, labels = species_counts.index)
+
+plt.boxplot(x = df.petal_width)
+plt.title("Petal Width")
+plt.show()
+
+sns.heatmap(df.iloc[:,:-1])
