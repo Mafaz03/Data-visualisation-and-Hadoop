@@ -4,6 +4,8 @@ bin/hdfs dfs mkdir geeks
 bin/hdfs dfs -ls /
 
 bin/hdfs dfs -touchz /geeks/myfile.txt
+or
+bin/hdfs dfs -touch /geeks/myfile.txt
 bin/hdfs dfs -lsr /geeks
 
 bin/hdfs dfs -put ../Desktop/enterfilename.txt /geeks
